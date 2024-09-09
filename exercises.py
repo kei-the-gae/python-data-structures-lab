@@ -29,3 +29,21 @@ def manage_students():
     return f'first_student: {first_student}, last_student: {last_student}'
 # Call the function and print the result
 print('Exercise 1:', manage_students())
+
+# Exercise 2: Loop and String Concatenation
+#
+# Create a tuple named foods containing the same number of foods (strings) as there are names in the students list.
+# Create a variable named meal and assign an empty string to it.
+# Use a for loop to iterate over the strings in foods and append each string to meal.
+
+def combine_foods():
+    # your code here
+    foods = ('dino nuggies', 'potato wedges', 'broccoli')
+    meal = ''
+    for food in foods:
+        meal += ''.join(food)
+        if not food == foods [-1]:
+            meal += ', '
+    return meal
+# Call the function and print the result
+print('Exercise 2:', combine_foods())
